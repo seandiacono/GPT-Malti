@@ -8,7 +8,7 @@ for domain in domains:
     dataset = datasets.load_dataset("MLRS/korpus_malti", domain)
 
     for document in dataset['train']:
-        entire_string += document['text'].join(" ") + " "
+        entire_string += " ".join(document['text'])
 
     with open("dataset/dataset.txt", "w") as f:
         f.write(entire_string)
