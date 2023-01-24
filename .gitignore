@@ -170,5 +170,4 @@ poetry.toml
 
 # CUSTOM ONES
 
-dataset/dataset.txt
-dataset/dataset_cleaned.txt
+dataset/*.txt
